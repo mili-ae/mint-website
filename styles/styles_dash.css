@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #0e1015;
+    color: white;
+}
+
+*::before, ::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.is-flex {
+    display: flex !important;
+}
+
+.button {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 7px;
+
+    transition: background-color .2s linear;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/*HEADER*/
+
+header {
+    padding: 15px;
+    
+}
+
+.guild-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.guild-title {
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-title {
+    margin: 0;
+    padding-left: 10px;
+    color: aliceblue;
+}
+
+.guild {
+    display: inline-flex;
+}
+
+.account-btns {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-btns a {
+    margin-left: 7px;
+}
+
+.button span {
+    font-size: 20px;
+    color: white;
+}
+
+/*END OF HEADER*/
+
+
+.container, .info-group, .settings-group, .settings-controls, .setting-control{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.is-half {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.info-group {
+    margin-top: 25px;
+}
+
+.settings-group {
+    margin-top: 30px;
+}
+
+.guild-info, .recent-activity, .setting-control {
+    background-color: #181a20;
+    border-radius: 5px;
+    padding: 26px;
+}
+
+.settings-controls {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.setting-control {
+    margin-right: 10px;
+}
+
+.server-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.info-title {
+    font-weight: normal;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.server-info li {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 25%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    color: #4f4f4f;
+}
+
+.server-info span {
+    color: white;
+}
+
+.server-info a {
+    color: #98ff98;
+}
+
+.activity-container {
+    overflow-x: auto;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+th {
+    color: #4f4f4f
+}
+
+th.date, th.action {
+    color: white;
+}
+
+th.user {
+    color: #98ff98;
+}
+
+table {
+    width: 100%;
+}
+
+.control input {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: rgba(72,75,81,0.15) 0px 1px 0px 0px inset;
+    background: #272b34;
+    color: white;
+    border: none;
+}
+
+.control .button {
+    background-color: #98ff98;
+    color: black;
+    margin-left: 10px;
+}
+
+.change-all-options {
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    justify-content: flex-start;
+}
+
+.reset-all-option .button {
+    background-color: #dd364d;
+    margin-right: 10px;
+}
+
+.update-all-option .button {
+    background-color: #98ff98;
+    color: black;
+}

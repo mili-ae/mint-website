@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles_dash.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Server Name Dashboard</title>
+</head>
+<body>
+    <!--Just making something i want to see in result as a template
+
+    Inspired by Dyno-->
+    <header>
+        <div class="container is-flex">
+            <div class="guild">
+                <img src="images/avatar.png" alt="ServerIcon" class="guild-icon">
+                <h3 class="guild-title">Server Name</h3>
+            </div>
+            <div class="account-btns">
+                <a href="#", class="button">
+                    <img src="images/avatar.png" alt="UserIcon", class="user-icon">
+                    <span class="user-title">User#0000</span>
+                </a>
+                <a href="#", class="button">
+                    <img src="images/icons/outline_logout_white_24dp.png" alt="LogoutIcon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="info-group is-flex">
+            <div class="is-half guild-info">
+                <h3 class="info-title">SERVER INFO</h3>
+                <ul class="server-info">
+                    <li>Members:
+                        <span>56</span>
+                    </li>
+                    <li>Categories:
+                        <span>8</span>
+                    </li>
+                    <li>Text Channels:
+                        <span>27</span>
+                    </li>
+                    <li>Voice Channels:
+                        <span>3</span>
+                    </li>
+                    <li>Roles:
+                        <span>50</span>
+                    </li>
+                    <li>Region:
+                        <span>hongkong</span>
+                    </li>
+                    <li>
+                        <a href="#" class="button">Copy Server ID</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="is-half recent-activity">
+                <h3 class="info-title">RECENT ACTIVITY</h3>
+                <div class="activity-container">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="avatar"></th>
+                                <th>Date</th>
+                                <th>User</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <th class="avatar">
+                                    <img src="https://cdn.discordapp.com/avatars/266589228077416459/787916eac2305c2b422abbc3d0100133.png?size=28" alt="">
+                                </th>
+                                <th class="date">Tue, Nov 2, 2021 3:52 AM</th>
+                                <th class="user">mili#1953</th>
+                                <th class="action">Disabled Logging</th>
+                            </tr>
+                            <tr>
+                                <th class="avatar">
+                                    <img src="https://cdn.discordapp.com/avatars/266589228077416459/787916eac2305c2b422abbc3d0100133.png?size=28" alt="">
+                                </th>
+                                <th class="date">Tue, Nov 2, 2021 3:51 AM</th>
+                                <th class="user">mili#1953</th>
+                                <th class="action">Enabled Logging</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="settings-group">
+            <h2>Settings</h2>
+            <div class="settings-controls is-flex">
+                <div class="setting-control">
+                    <h4 class="info-title">Command Prefix</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="m!", maxlength="3">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+                <div class="setting-control">
+                    <h4 class="info-title">Logging</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="This is gonna be a dropdown menu", maxlength="3">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+                <div class="setting-control">
+                    <h4 class="info-title">Mute Role</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="This is gonna be a dropdown menu", maxlength="3">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+                <div class="setting-control">
+                    <h4 class="info-title">Warns Limit</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="3", maxlength="2">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+            </div>
+            <div class="settings-controls is-flex">
+                <div class="setting-control">
+                    <h4 class="info-title">Warn Limit Action</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="This is gonna be a dropdown menu", maxlength="2">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+                <div class="setting-control">
+                    <h4 class="info-title">Welcome Channel</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="This is gonna be a dropdown menu", maxlength="2">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+                <div class="setting-control">
+                    <h4 class="info-title">Welcome Text</h4>
+                    <p class="control is-flex">
+                        <input type="text" placeholder="Welcome to ?g, ?n", maxlength="125">
+                        <a href="#" class="button">Update</a>
+                    </p>
+                </div>
+            </div>
+            <div class="settings-controls change-all-options">
+                <div class="reset-all-option">
+                    <a href="#" class="button">Reset All</a>
+                </div>
+                <div class="update-all-option">
+                    <a href="#" class="button">Update All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
